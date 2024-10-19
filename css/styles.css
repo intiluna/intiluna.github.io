@@ -1,0 +1,196 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h1.site-title a {
+    color: #333;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+p.site-tagline {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Navigation Menu */
+nav {
+    margin-top: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main content */
+#main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing */  
+    align-items: stretch; /* Ensures cards have equal height */
+    flex-flow: wrap; /* Allows cards to wrap to the next line */
+
+}
+
+.project-left,
+.project-right {
+    width: 48%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #777;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #333;
+}
+
+/* General styling for project cards */
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    /*width: 100%;*/
+    
+    text-align: center; /* Centers the content horizontally */
+    box-sizing: border-box;
+    flex: 1 1 calc(50% - 20px);
+    min-width: 280px; /* Ensures that cards don’t shrink too much */
+    
+    
+    
+}
+
+
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block; /* Ensures the image behaves like a block element */
+    margin-left: auto; /* Centers image */
+    margin-right: auto; /* Centers image */
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+    
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tags li {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.project-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+
+
+/* Responsive design */
+/* Ensure cards are stacked vertically on mobile screens */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card {
+        width: 100%; /* Cards take full width on mobile */
+    }
+}
+
+    .project-left, .project-right {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 0 auto; /* Centra horizontalmente el contenido */
+        text-align: center;
+        border: 3px solid green;
+    }
+}
