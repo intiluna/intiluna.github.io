@@ -63,7 +63,15 @@ nav {
     margin: 0 auto;
 }
 
-.projects-container {
+.index-projects-container {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing */  
+    align-items: stretch; /* Ensures cards have equal height */
+    /*flex-flow: wrap; /* Allows cards to wrap to the next line */
+
+}.
+
+projects-container {
     display: flex;
     justify-content: space-between; /* Ensures equal spacing */  
     align-items: stretch; /* Ensures cards have equal height */
@@ -189,8 +197,9 @@ footer .social-links a:hover {
     .project-left, .project-right {
         width: 100%;
         margin-bottom: 20px;
+        
         margin: 0 auto; /* Centra horizontalmente el contenido */
         text-align: center;
-        border: 3px solid green;
+        /*border: 3px solid green;*/
     }
 }
