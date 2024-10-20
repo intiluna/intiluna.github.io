@@ -68,6 +68,7 @@ nav {
     justify-content: space-between; /* Ensures equal spacing */  
     align-items: stretch; /* Ensures cards have equal height */
     /*flex-flow: wrap; /* Allows cards to wrap to the next line */
+    gap: 40px; /* Ajusta el espacio entre los elementos left y right */
 
 }.
 
